@@ -1,16 +1,15 @@
 version: '3.7'
 
 services:
-    myblog:
-            build: ./myblog
-            ports:
-                   - "80:2368"
+    dropbox:
+            build: ./dropbox
             volumes:
                    - type: volume
                      source: content-myblog
-                     target: /var/lib/ghost/content 
+                     target: /dbox/Dropbox/ghost/myblog/content
             restart: always
+
 volumes:
     content-myblog:
-            external: true
+            name: content-myblog
 
