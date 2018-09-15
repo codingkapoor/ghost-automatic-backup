@@ -1,4 +1,4 @@
-# ghost-backup-automatically
+# ghost-automatic-backup
 Simplest scheme to automatically backup your ghost blog.
 
 # Step 1: Setup Ghost Backup
